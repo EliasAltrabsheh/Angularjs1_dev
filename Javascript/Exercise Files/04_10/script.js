@@ -12,3 +12,22 @@ var course = {
 }
 
 console.log(course);
+
+
+
+
+
+function Course(title,instructor,level,views){
+  this.title = title;
+  this.instructor = instructor;
+  this.views = views,
+  this.updateViews = function()
+  {
+    return ++this.views;
+
+  }
+
+}
+
+var course02 = new Course("JS", "Elias", 0,0);
+console.log(course02);
